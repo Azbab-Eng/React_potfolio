@@ -1,0 +1,207 @@
+
+
+.con{
+    width: 100%;
+    margin-top: 70px;
+    /* display: grid;
+    grid-template-columns: 40% 60%; */
+    display: flex;
+    justify-content: space-between;
+}
+.left-bio{
+    width: 40%;
+    font-size: 20px;
+}
+.top{
+    letter-spacing: 4px;
+}
+.name{
+    color: var(--blue);
+    word-spacing: 5px;
+    letter-spacing: 2px;
+}
+.skill-desc{
+    color: var(--blue);
+}
+.bio-desc{
+    margin-top: 20px;
+    width: 90%;
+    text-align: justify;
+}
+.social{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    margin-top: 20px;
+}
+.social-icon{
+    margin-left: 30px;
+    /* margin-top: 10px; */
+}
+.right-bio{
+    width: 40%;
+    background: var(--blue);
+    border-radius: 50%;
+}
+.right-bio img{
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    border: 3px solid var(--blue);
+    border-style: dashed;
+}
+.social-icon i{
+    margin-right: 8px;
+    padding: 5px 8px;
+    color: var(--blue);
+    border: 1px solid var(--blue);
+    border-radius: 50%;
+    align-items: center;
+    cursor: pointer;
+}
+.social-icon i:hover{
+    background: var(--blue);
+    color: white;
+}
+.social button{
+    cursor: pointer;
+    color:var(--blue);
+    background: black;
+    border: 1px solid var(--blue);
+    border-radius: 20px;
+    width: 120px;
+    padding: 8px 15px;
+    margin-bottom: 8px;
+    white-space: wrap;
+}
+.expo-con{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.expo{
+    padding: 20px ;
+    margin-top: 20px;
+}
+.expo-no{
+    font-size: 50px;
+    font-weight: 550;
+}
+.expo-desc{
+    font-size: 20px;
+    letter-spacing: 1.5px;
+}
+@media  (max-width:800px) {
+    .expo-con{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .expo{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        padding: 20px ;
+        margin-top: 20px;
+    }
+    .expo-no{
+        align-items: center;
+        font-size: 50px;
+        font-weight: 550;
+    }
+    .expo-desc{
+        font-size: 20px;
+        letter-spacing: 1.5px;
+    }
+    
+
+    .con{
+        width: 100%;
+        margin-top: 60px;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center
+        ;
+    }
+    .left-bio{
+        display: inline-block;
+        width: 100%;
+        /* flex: 1; */
+        font-size: 15px;
+    }
+    .top{
+        width: 100%;
+        text-align: center;
+        letter-spacing: 5px;
+    }
+    .name{
+        width: 400px;
+        text-align: center;
+        color: var(--blue);
+        word-spacing: 5px;
+        letter-spacing: 2px;
+    }
+    .skill{
+        width: 400px;
+        letter-spacing: 2px;
+        text-align: center;
+    }
+    .skill-desc{
+        width: 300px;
+        text-align: justify;
+        color: var(--blue);
+    }
+    .bio-desc{
+        font-size: 15px;
+        text-align: center;
+    }
+    .social{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .social button{
+        color:var(--blue);
+        background: black;
+        border: 1px solid var(--blue);
+        border-radius: 20px;
+        width: 120px;
+        padding: 8px 15px;
+        margin-bottom: 8px;
+        white-space: wrap;
+    }
+    .social-icon{
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+    .right-bio{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 0%;
+        background: var(--blue);
+        border-radius: 50%;
+    }
+    .right-bio img{
+        /* align-items: center; */
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        border: 3px solid var(--blue);
+        border-style: dashed;
+    }
+}
+@media (max-width:1360px) {
+    .header-con{
+        /* padding: ; */
+    }
+    .header-con a{
+        padding: 1px;
+        font-weight: 400;
+        font-size: 12px;
+    }
+} 

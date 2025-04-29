@@ -1,0 +1,89 @@
+html,body{
+    display: grid;
+    height: 100%;
+    place-items: center;
+}
+.container{
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.wrapper{
+    height: 400px;
+    width: 320px;
+    position: relative;
+    margin-left: 10px;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+.wrapper .card{
+    background: white;
+    padding: 5px;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    color: black;
+    border-radius: 10px;
+    transition: transform 0.7s cubic-bezier(0.3, 0.2, 0.2, 1) ;
+}
+.wrapper .card img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.wrapper .back-face{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    transform: rotateY(90deg);
+    background: white;
+}
+
+.wrapper:hover > .back-face{
+    transform: rotateY(0deg);
+}
+.wrapper:hover > .front-face{
+    transform: rotateY(-90deg);
+}
+
+.wrapper .back-face .info{
+    text-align: center;
+}
+.back-face .info .title{
+    font-size: 30px;
+    font-weight: 500;
+}
+.back-face ul{
+    display: flex;
+}
+.back-face ul a{
+    display: block;
+    height: 40px;
+    width: 40px;
+    background: red;
+    text-align: center;
+    border: 2px solid transparent;
+    line-height: 38px;
+    margin: 0 5px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.back-face ul a:hover{
+
+}
+.wrapper .back-face .face2{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    padding: 5px;
+    background: var(--blue);
+
+}

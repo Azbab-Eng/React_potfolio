@@ -1,0 +1,154 @@
+:root{
+    --black:rgb(15, 15, 15);
+}
+section{
+    margin-top: 70px;
+}
+.con-res{
+    display: grid;
+    grid-template-columns:1.1fr 1.9fr;
+    column-gap: 45px;
+}
+.left-res{
+    overflow-y: auto;
+}
+.why ,h2{
+    margin-bottom: 30px;
+    font-size: 35px;
+    font-weight: 600;
+    word-spacing: 9px;
+    letter-spacing: 1.5px;
+}
+.reason{
+    margin-bottom: 30px;
+    font-size: 15px;
+}
+.left-res ul{
+    list-style-type: none;
+}
+.left-res li.active{
+    background-color: var(--blue);
+}
+.left-res li{
+    background-color: var(--black);
+    padding: 15px 10px;
+    margin: 25px 0;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 5px;
+    transition: .3s;
+    /* width: ; */
+    font-weight: 550;
+    font-size: 18px;
+}
+.left-res li:hover{
+    background-color: var(--blue);
+}
+.right-res p{
+    width: 70%;
+    margin-bottom: 30px;
+    font-size: 15px;
+}
+
+.detail-content{
+    overflow-y: auto;
+    display: block;
+    height: 60vh;
+    scrollbar-color: var(--blue);
+}
+.detail-content.active{
+    display: block;
+}
+.hidden{
+    display: none;
+}
+.details .expe ,.details .edu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+.details .expe div,.details .edu div{
+    background: var(--black);
+    border-radius: 10px;
+    padding: 25px;
+    letter-spacing: 1px;
+}
+.expe div h2,.edu div h2{
+    font-size: 17px;
+    width: 50%;
+    margin-bottom: 13px;
+    color: var(--blue);
+    display: flex;
+    justify-content: space-between;
+}
+.expe div .job-title,.edu div .job-title{
+    color: white;
+    font-size: 18px;
+    width: 100%;
+    margin-bottom: 27px;
+}
+.expe div p ,.edu div p {
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 0;
+    width: 100%;
+    white-space: wrap;
+    display: flex;
+    align-items: center;
+}
+.expe div p span ,.edu div p span{
+    background-color: var(--blue);
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+.skl{
+    width:100%;
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr ;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+p img{
+    width: 100%;
+}
+.skl p {
+    position: relative;
+    width: 100%;
+    background-color: var(--black);
+    padding: 35px;
+    margin: 0;
+}
+.skl p span{
+    background: var(--black);
+    padding: 8px 12px;
+    text-align: center;
+    position: absolute;
+    bottom: -20px;
+    right: 50px;
+    z-index: 20;
+    opacity: 0;
+    white-space: wrap;
+}
+.skl p:hover span{
+    opacity: 1;
+}
+.ab{
+    display: grid;
+    grid-template-columns: .8fr 1.2fr;
+}
+.ab p{
+    padding: 5px;
+    letter-spacing: 1px;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 550;
+}
+.ab p span{
+    color: var(--blue);
+    /* color: rgb(228, 228, 228); */
+    font-size: 18px;
+    font-weight: 550;
+}

@@ -1,0 +1,122 @@
+*{
+    margin-bottom: 10px;
+}
+.contact{
+    display: grid;
+    grid-template-columns:2fr 1fr ;
+    column-gap: 70px;
+}
+.ct-left{
+    background:var(--black);
+    color: white;
+    padding: 45px;
+    border-radius: 15px;
+}
+.ct-left h1{
+    color: var(--blue);
+    font-size: 30px;
+    word-spacing: 10px;
+    letter-spacing: 2px;
+    /* margin-bottom: 15px; */
+}
+.ct-left p {
+    font-size: 17px;
+    word-spacing: 3px;
+    letter-spacing: .8px;
+    /* margin-bottom: 15px; */
+    line-height: 25px;
+}
+.dts{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 25px;
+    row-gap: 15px;
+    /* margin-bottom: 15px; */
+}
+input {
+    background: black;
+    border: none;
+    border-radius:6px;
+    padding: 18px 25px;
+    font-size: 15px;
+    color: white;
+    font-weight: 550;
+}
+input::placeholder, .slt-dt,textarea::placeholder{
+    color: rgb(247, 247, 247);
+    text-shadow: 1px 0px 0px white;
+}
+.slt-dt{
+    background: black;
+    color: white;
+    width: 100%;
+    border-radius:6px;
+    padding: 18px 20px;
+    /* margin-bottom: 15px; */
+    border: none;
+    font-size: 15px;
+    font-weight: 550;
+}
+
+textarea{
+    width: 100%;
+    height: 180px;
+    background: black;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 18px;
+    padding: 15px 20px;
+    /* margin-bottom: 15px; */
+}
+button{
+    padding: 10px;
+    background: var(--blue);
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 550;
+    margin-bottom: 0px;
+}
+input:focus , .slt-dt:focus , textarea:focus{
+    border: 2px solid var(--blue);
+    outline:none;
+}
+
+input, button{
+    /* appearance: none; */
+    /* border: none; */
+    /* outline: none; */
+    /* background: none; */
+
+  }
+  .ct-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin-top: -70px;
+  }
+  .ct-box{
+    display: flex;
+    margin-bottom:20px;
+  }
+  .ct-box img{
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    background: var(--black);
+    padding: 8px;
+    border-radius: 5px;
+    color: var(--blue);
+  }
+  .ct-box .ads{
+    color: rgb(214, 214, 214);
+    font-size: 16px;
+    font-size: 550;
+  }
+  .ads p:nth-child(2){
+    font-weight: 600;
+    font-size: 16px;
+    color:white ;
+  }
