@@ -4,6 +4,6 @@ import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base:'/Azbab-Eng/',
+  base:'/React_potfolio/',
   plugins: [react(), tailwindcss(),],
 })
