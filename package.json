@@ -1,11 +1,10 @@
-{"homepage":"http://Azbab-Eng.github.io/React_potfolio",
+{"homepage":"https://Azbab-Eng.github.io/React_potfolio",
   "name": "azbabsignhub",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "start": "react-scripts start",
-    "build":"react-scripts build",
     "predeploy":"npm run build",
     "deploy":"gh-pages -d build",
     "dev": "vite",
