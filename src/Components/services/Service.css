@@ -6,6 +6,7 @@
     column-gap: 60px;
     row-gap: 60px;
 }
+
 .service{
     border-bottom: 1px solid white;
     padding-bottom: 20px;
@@ -52,10 +53,11 @@
     font-size: 15px;
     word-spacing: 3px;
 }
-@media (max-width:900px) {
+@media (max-width:500px) {
     .services{
+        max-width: 500px;
         grid-template-columns: 1fr;
-        padding:0 30px ;
+        padding:0 40px ;
         cursor: pointer;
     }
 }

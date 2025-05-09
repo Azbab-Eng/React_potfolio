@@ -1,5 +1,16 @@
 import React, { useEffect, useRef } from 'react'
 import './Resume.css'
+import Arduino from '../../assets/Icons/images (10).png'
+import Electronic from '../../assets/Icons/images (9).png'
+import Mongodb from '../../assets/Icons/images (8).png'
+import Python from '../../assets/Icons/download (11).jpeg'
+import NodeJS from '../../assets/Icons/images (6).png'
+import Reacti from '../../assets/Icons/images (4).png'
+import Javascript from '../../assets/Icons/images (3).png'
+import css from '../../assets/Icons/images (2).png'
+import htmli from '../../assets/Icons/images (1).png'
+import Reactnative from '../../assets/Icons/images (5).png'
+
 
 function Resume() {
 
@@ -11,6 +22,7 @@ function Resume() {
                 li.classList.add('active')
                 console.log(li)
                 let detailContent = document.querySelectorAll('.detail-content')
+                const text = document.querySelector('.ti-text')
                 detailContent.forEach(content => {
                     content.classList.remove('active')
                     content.classList.add('hidden')
@@ -18,21 +30,26 @@ function Resume() {
                         document.querySelector('.title').textContent = li.textContent
                         document.querySelector('.details #experience').classList.remove('hidden')
                         document.querySelector('.details #experience').classList.add('actice')
+                        text.textContent = "I have hands-on experience building websites, automating tasks, and working with emerging technologies."
+                        
                     }
                     if (li.id == 'education') {
                         document.querySelector('.title').textContent = li.textContent
                         document.querySelector('.details #education').classList.remove('hidden')
                         document.querySelector('.details #education').classList.add('actice')
+                        text.textContent = "I studied computer science, where I gained strong foundations in programming, systems, and problem-solving."
                     }
                     if (li.id == 'skills') {
                         document.querySelector('.title').textContent = li.textContent
                         document.querySelector('.details #skills').classList.remove('hidden')
                         document.querySelector('.details #skills').classList.add('actice')
+                        text.textContent = "I'm a passionate developer focused on creating smart, scalable, and modern digital solutions."
                     }
                     if (li.id == 'about'){
                         document.querySelector('.title').textContent = li.textContent
                         document.querySelector('.details #about').classList.remove('hidden')
                         document.querySelector('.details #about').classList.add('actice')
+                        text.textContent = "I build responsive, fast, and user-friendly websites using modern web technologies"
                     }
                 });
                 
@@ -48,7 +65,8 @@ function Resume() {
             <main className="con-res" name="resume">
                 <div className="left-res">
                     <h1 className="why">Why hire me?</h1>
-                    <p className="reason">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate ut odio . </p>
+                    <p className="reason">I’m reliable, adaptable, and driven to deliver 
+                        high-quality work that makes a real impact. </p>
                     <div className="list">
                         <ul> 
                             <li   id="experience" className="active">Experience</li>
@@ -60,7 +78,7 @@ function Resume() {
                 </div>
                 <div className="right-res">
                     <h2>My <span className="title">Experience</span></h2>
-                    <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit.nostrum iusto beatae.</p>
+                    <p className='ti-text'>I have hands-on experience building websites, automating tasks, and working with emerging technologies.</p>
                     <div className="details">
                         <div id="experience" className="detail-content active">
                             <div className="expe" >
@@ -112,16 +130,16 @@ function Resume() {
                         </div>
                         <div id="skills" className="detail-content hidden">
                             <div className="skl">
-                                <p><img src="/images/20240328_214304.jpg" alt="" /><span>Html</span></p>
-                                <p><img src="/images/20240328_214315.jpg" alt="" /><span>Css</span></p>
-                                <p><img src="/images/20240328_214347.jpg" alt="" /><span>Javascript</span></p>
-                                <p><img src="/images/20240328_214418.jpg" alt="" /><span>React</span></p>
-                                <p><img src="/images/20240329_120824.jpg" alt="" /><span>NodeJS</span></p>
-                                <p><img src="/images/20240329_171407.jpg" alt="" /><span>Python</span></p>
-                                <p><img src="/images/20240406_012212.jpg" alt="" /><span>MongoDB</span></p>
-                                <p><img src="/images/20240406_012215.jpg" alt="" /><span>ReactNative</span></p>
-                                <p><img src="/images/onep5r.jpg" alt="" /><span>El /ectronics</span></p>
-                                <p><img src="/images/my-channel.jpeg" alt="" /><span>Arduino</span></p>
+                                <p><img src={htmli} alt="htmli" /><span>Html</span></p>
+                                <p><img src={css} alt="css" /><span>Css</span></p>
+                                <p><img src={Javascript} alt="Javascript" /><span>Javascript</span></p>
+                                <p><img src={Reacti} alt="Reacti" /><span>React</span></p>
+                                <p><img src={NodeJS} alt="NodeJS" /><span>NodeJS</span></p>
+                                <p><img src={Python} alt="Python" /><span>Python</span></p>
+                                <p><img src={Mongodb} alt="Mongodb" /><span>MongoDB</span></p>
+                                <p><img src={Reactnative} alt="Reactnative" /><span>ReactNative</span></p>
+                                <p><img src={Electronic} alt="Electronic" /><span>Electronics</span></p>
+                                <p><img src={Arduino} alt="Arduino" /><span>Arduino</span></p>
                             </div>
                         </div>
                         <div id="about" className="detail-content hidden">

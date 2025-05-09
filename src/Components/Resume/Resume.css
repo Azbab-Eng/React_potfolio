@@ -1,10 +1,12 @@
 :root{
     --black:rgb(15, 15, 15);
 }
+
 section{
     margin-top: 70px;
 }
 .con-res{
+    margin-top: 50px;
     display: grid;
     grid-template-columns:1.1fr 1.9fr;
     column-gap: 45px;
@@ -45,7 +47,7 @@ section{
     background-color: var(--blue);
 }
 .right-res p{
-    width: 70%;
+    max-width: 70%;
     margin-bottom: 30px;
     font-size: 15px;
 }
@@ -114,11 +116,21 @@ section{
 p img{
     width: 100%;
 }
+.skl p img{
+    margin: 0;
+    width: 70px;
+    border-radius: 50%;
+}
 .skl p {
     position: relative;
     width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: var(--black);
-    padding: 35px;
+    padding: 5px;
+    margin-right: 0;
     margin: 0;
 }
 .skl p span{
@@ -151,4 +163,34 @@ p img{
     /* color: rgb(228, 228, 228); */
     font-size: 18px;
     font-weight: 550;
+}
+@media(max-width:500px){
+    .con-res{
+        max-width: 500px;
+        padding: 0 50px;
+        display: flex;
+        flex-direction: column;
+    }
+    .right-res p{
+        font-size: 18px;
+        max-width: 100%;
+    }
+    .skl{
+        column-gap: 10px;
+    }
+    .skl p span{
+        right: 10px;
+        white-space: wrap;
+        padding: 4px 8px;
+        background-color: var(--blue);
+        font-size: 15px;
+    }
+    .skl p img{
+        width: 50px;
+    }
+    .ab p span{
+        display: block;
+        margin-top: -10px;
+        font-size: 15px;
+    }
 }

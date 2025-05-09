@@ -5,8 +5,11 @@ html,body{
 }
 .container{
     display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     overflow: hidden;
+    
 }
 *{
     margin: 0;
@@ -18,7 +21,7 @@ html,body{
     height: 400px;
     width: 320px;
     position: relative;
-    margin-left: 10px;
+    margin-left: 20px;
     transform-style: preserve-3d;
     perspective: 1000px;
 }
@@ -68,7 +71,7 @@ html,body{
     display: block;
     height: 40px;
     width: 40px;
-    background: red;
+    background: var(--blue);
     text-align: center;
     border: 2px solid transparent;
     line-height: 38px;
@@ -86,4 +89,23 @@ html,body{
     padding: 5px;
     background: var(--blue);
 
+}
+
+@media(max-width:500px){
+    .container{
+        max-width:500px;
+        display:block ;
+        margin: 0;
+        
+    }
+    .one,.three,.four{
+        display: none;
+    }
+    .wrapper.two{
+        /* max-width: 70%;
+        display: flex;
+        justify-content: center;
+        align-items: center; */
+        margin-left: 65px;
+    }
 }

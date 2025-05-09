@@ -1,15 +1,13 @@
 
 
 .con{
-    width: 100%;
+    max-width: 100%;
     margin-top: 70px;
-    /* display: grid;
-    grid-template-columns: 40% 60%; */
     display: flex;
     justify-content: space-between;
 }
 .left-bio{
-    width: 40%;
+    max-width: 40%;
     font-size: 20px;
 }
 .top{
@@ -25,43 +23,41 @@
 }
 .bio-desc{
     margin-top: 20px;
-    width: 90%;
+    max-width: 90%;
     text-align: justify;
 }
 .social{
     display: flex;
-    /* justify-content: center; */
     align-items: center;
     margin-top: 20px;
 }
 .social-icon{
     margin-left: 30px;
-    /* margin-top: 10px; */
 }
 .right-bio{
-    width: 40%;
+    max-width: 40%;
     background: var(--blue);
     border-radius: 50%;
 }
 .right-bio img{
-    width: 350px;
+    max-width: 350px;
     height: 350px;
     border-radius: 50%;
     border: 3px solid var(--blue);
     border-style: dashed;
 }
-.social-icon i{
+.social-icon a{
     margin-right: 8px;
-    padding: 5px 8px;
+    padding: 6px 8px;
     color: var(--blue);
-    border: 1px solid var(--blue);
+    border: 0 solid var(--blue);
     border-radius: 50%;
     align-items: center;
     cursor: pointer;
-}
-.social-icon i:hover{
     background: var(--blue);
-    color: white;
+}
+.social-icon a:hover{
+    background: white;
 }
 .social button{
     cursor: pointer;
@@ -90,8 +86,29 @@
 .expo-desc{
     font-size: 20px;
     letter-spacing: 1.5px;
+}a img{
+    width: 30px;
+    margin-bottom: -8px;
 }
-@media  (max-width:800px) {
+.git{
+    border-radius: 70%;
+}
+.right-bio{
+    animation-iteration-count: 1.5;
+    animation-name:spin;
+    animation-delay: 2s;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+}
+@keyframes spin{
+    0%{}
+    50%{
+        scale: 1.5;
+        transform: rotate(360deg);
+    }
+}
+
+ @media (min-width:501px)and  (max-width:800px) {
     .expo-con{
         display: flex;
         flex-direction: column;
@@ -122,13 +139,11 @@
         margin-top: 60px;
         display: flex;
         flex-direction: column-reverse;
-        align-items: center
-        ;
+        align-items: center;
     }
     .left-bio{
         display: inline-block;
         width: 100%;
-        /* flex: 1; */
         font-size: 15px;
     }
     .top{
@@ -187,21 +202,50 @@
         border-radius: 50%;
     }
     .right-bio img{
-        /* align-items: center; */
         width: 200px;
         height: 200px;
         border-radius: 50%;
         border: 3px solid var(--blue);
         border-style: dashed;
     }
-}
-@media (max-width:1360px) {
-    .header-con{
-        /* padding: ; */
-    }
-    .header-con a{
-        padding: 1px;
-        font-weight: 400;
-        font-size: 12px;
-    }
 } 
+ 
+@media (max-width:500px) {
+    .con{
+        align-items: center;
+        max-width: 500px;
+        margin-top: 100px;
+        flex-direction: column-reverse;
+    }
+    .left-bio{
+        max-width: 100%;
+        text-align: center;
+    }
+    .bio-desc{
+        padding: 10px 15px;
+        text-align: justify;
+        font-size: 23px;
+        word-spacing: -3px;
+    }
+    .social{
+        justify-content: center;
+    }
+    .right-bio{
+        max-width: 100%;
+        background: none;
+    }
+    .right-bio img{
+        max-width: 100%;
+    }
+    .expo-con{
+        justify-content: start;
+        align-items: center;
+    }
+    .expo{
+        padding: 10px;
+    }
+    .expo-no{
+        font-size: 35px;
+        text-align: center;
+    }
+}
