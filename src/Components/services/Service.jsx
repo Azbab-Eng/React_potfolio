@@ -23,7 +23,7 @@ function Service() {
                 <div className="service">
                     <h1 className="no-ser"><span className="no-n">04</span><span className="arrow">4</span></h1>
                     <h1 className="name-ser">Internet Of Think</h1>
-                    <p className="desc-ser">I work with IoT systems to connect devices and collect real-world data for smarter decisions.</p>
+                    <p className="desc-ser">I work with IoT systems to connect devices and collect real-world data for smart decisions.</p>
                 </div>
             </main>
 

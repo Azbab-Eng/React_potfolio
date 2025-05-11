@@ -23,7 +23,8 @@ section{
 }
 .reason{
     margin-bottom: 30px;
-    font-size: 15px;
+    font-size: 20px;
+    text-align: justify;
 }
 .left-res ul{
     list-style-type: none;
@@ -41,7 +42,7 @@ section{
     transition: .3s;
     /* width: ; */
     font-weight: 550;
-    font-size: 18px;
+    font-size: 21px;
 }
 .left-res li:hover{
     background-color: var(--blue);
@@ -49,7 +50,7 @@ section{
 .right-res p{
     max-width: 70%;
     margin-bottom: 30px;
-    font-size: 15px;
+    font-size: 18px;
 }
 
 .detail-content{
@@ -77,7 +78,7 @@ section{
     letter-spacing: 1px;
 }
 .expe div h2,.edu div h2{
-    font-size: 17px;
+    font-size: 21px;
     width: 50%;
     margin-bottom: 13px;
     color: var(--blue);
@@ -155,24 +156,24 @@ p img{
     padding: 5px;
     letter-spacing: 1px;
     width: 100%;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 550;
 }
 .ab p span{
     color: var(--blue);
     /* color: rgb(228, 228, 228); */
-    font-size: 18px;
+    font-size: 25px;
     font-weight: 550;
 }
 @media(max-width:500px){
     .con-res{
-        max-width: 500px;
+        max-width: 400px;
         padding: 0 50px;
         display: flex;
         flex-direction: column;
     }
     .right-res p{
-        font-size: 18px;
+        font-size: 25px;
         max-width: 100%;
     }
     .skl{
@@ -183,7 +184,7 @@ p img{
         white-space: wrap;
         padding: 4px 8px;
         background-color: var(--blue);
-        font-size: 15px;
+        font-size: 22px;
     }
     .skl p img{
         width: 50px;
@@ -191,6 +192,6 @@ p img{
     .ab p span{
         display: block;
         margin-top: -10px;
-        font-size: 15px;
+        font-size: 22px;
     }
 }

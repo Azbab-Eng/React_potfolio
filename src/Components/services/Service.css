@@ -43,21 +43,22 @@
 }
 .name-ser{
     color: white;
-    font-size: 30px;
+    font-size: 32px;
     word-spacing: 10px;
     letter-spacing: 1.5px;
     margin-bottom: 20px;
     transition: .7s;
 }
 .desc-ser{
-    font-size: 15px;
+    font-size: 22px;
     word-spacing: 3px;
 }
 @media (max-width:500px) {
     .services{
-        max-width: 500px;
+        max-width: 400px;
         grid-template-columns: 1fr;
         padding:0 40px ;
         cursor: pointer;
+        
     }
 }
