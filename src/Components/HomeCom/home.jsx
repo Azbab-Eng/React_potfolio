@@ -18,11 +18,11 @@ function Home() {
                         <h1 className="top">Hello I'm</h1>
                         <h1 className="name">Babalola Abdulazeez</h1>
                         <h1 className="skill">I'm a <span className="skill-desc"><Typewriter 
-                        words={["Full-Stack Developer","Automation Specialist","Robotics & Engineer"]}
+                        words={["Full-Stack Developer","Automation Specialist","Robotics Engineer"]}
                         loop={true} cursor cursorStyle='|' typeSpeed={70} deleteSpeed={50} delaySpeed={1000}
                         /></span></h1>
                         <p className="bio-desc">
-                        I'm a passionate developer focuses
+                        I'm a passionate developer who focuses
                         on creating smart, scalable, and modern 
                         digital solutions.
 

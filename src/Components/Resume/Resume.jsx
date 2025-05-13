@@ -108,7 +108,7 @@ function Resume() {
                             <div className="edu" >
                                 <div className="">
                                     <h2><span>2025</span><span>-</span><span>Present</span></h2>
-                                    <h2 className="job-title">Cycer Security</h2>
+                                    <h2 className="job-title">Statistics</h2>
                                     <p><span ></span> University Of Ibadan</p>
                                 </div>
                                 <div className="">
