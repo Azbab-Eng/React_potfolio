@@ -211,7 +211,7 @@
     }
 }  */
  
-@media (max-width:00px) {
+@media (max-width:400px) {
     .con{
         align-items: center;
         max-width: 400px;
